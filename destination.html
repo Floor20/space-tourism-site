@@ -18,7 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script defer src="src/index.js"></script>
+    <script defer src="src/navigation.js"></script>
+    <script defer src="src/tabs.js"></script>
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -109,35 +110,52 @@
         <img src="assets/destination/image-titan.png" alt="titan" />
       </picture>
 
-      <div class="tab-list underline-indicators flex">
+      <div class="tab-list underline-indicators flex" role="tablist">
         <button
           aria-selected="true"
+          aria-controls="moon-tab"
           class="text-light uppercase letter-spacing-2 ff-sans-cond"
+          tabindex="0"
+          role="tab"
         >
           Moon
         </button>
         <button
           aria-selected="false"
+          aria-controls="mars-tab"
           class="text-light uppercase letter-spacing-2 ff-sans-cond"
+          tabindex="-1"
+          role="tab"
         >
           Mars
         </button>
         <button
           aria-selected="false"
+          aria-controls="europa-tab"
           class="text-light uppercase letter-spacing-2 ff-sans-cond"
+          tabindex="-1"
+          role="tab"
         >
           Europa
         </button>
         <button
           aria-selected="false"
+          aria-controls="titan-tab"
           class="text-light uppercase letter-spacing-2 ff-sans-cond"
+          tabindex="-1"
+          role="tab"
         >
           Titan
         </button>
       </div>
 
       <!-- Moon content -->
-      <article class="destination-info flow">
+      <article
+        class="destination-info flow"
+        id="moon-tab"
+        tabindex="0"
+        role="tabpanel"
+      >
         <h2 class="fs-800 ff-serif uppercase">Moon</h2>
 
         <p>
@@ -160,7 +178,13 @@
       </article>
 
       <!-- Mars content -->
-      <article class="destination-info flow" hidden>
+      <article
+        class="destination-info flow"
+        id="mars-tab"
+        tabindex="0"
+        role="tabpanel"
+        hidden
+      >
         <h2 class="fs-800 ff-serif uppercase">Mars</h2>
 
         <p>
@@ -182,7 +206,13 @@
       </article>
 
       <!-- Europa content -->
-      <article class="destination-info flow" hidden>
+      <article
+        class="destination-info flow"
+        id="europa-tab"
+        tabindex="0"
+        role="tabpanel"
+        hidden
+      >
         <h2 class="fs-800 ff-serif uppercase">Europa</h2>
 
         <p>
@@ -205,7 +235,13 @@
       </article>
 
       <!-- Titan content -->
-      <article class="destination-info flow" hidden>
+      <article
+        class="destination-info flow"
+        id="titan-tab"
+        tabindex="0"
+        role="tabpanel"
+        hidden
+      >
         <h2 class="fs-800 ff-serif uppercase">Moon</h2>
 
         <p>
