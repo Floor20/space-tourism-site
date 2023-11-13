@@ -522,19 +522,19 @@ body {
 
 /* home */
 .home {
-  background-image: url(./assets/home/background-home-mobile.jpg);
+  background-image: url(../assets/home/background-home-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
   .home {
     background-position: center center;
-    background-image: url(./assets/home/background-home-tablet.jpg);
+    background-image: url(../assets/home/background-home-desktop.jpg);
   }
 }
 
 @media (min-width: 45rem) {
   .home {
-    background-image: url(./assets/home/background-home-desktop.jpg);
+    background-image: url(../assets/home/background-home-desktop.jpg);
   }
 }
 
