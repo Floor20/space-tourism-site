@@ -574,6 +574,10 @@ body {
   }
 }
 
+/* technology */
+.technology {
+  background-image: url(../assets/technology/background-technology-mobile.jpg);
+}
 /* ----------------------------------- */
 /*               Layout                */
 /* ----------------------------------- */
@@ -737,4 +741,25 @@ body {
   .grid-container--crew > picture {
     align-self: end;
   }
+}
+
+/* ----- technology layout ------ */
+
+.grid-container--technology {
+  --flow-space: 1rem;
+  grid-template-areas:
+    "title"
+    "image"
+    "numbers"
+    "content";
+  padding-inline: 0;
+  padding-bottom: 5rem;
+}
+
+.grid-container--technology > article {
+  padding-inline: 1.5rem;
+}
+
+.technology-details h2 {
+  color: hsl(var(--clr-white) / 0.5);
 }
