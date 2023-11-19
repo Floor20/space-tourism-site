@@ -763,6 +763,18 @@ body {
   padding-bottom: 5rem;
 }
 
+.grid-container--technology > .technology-details {
+  grid-area: content;
+}
+
+.grid-container--technology > picture {
+  grid-area: image;
+}
+
+.grid-container--technology > .number-indicators {
+  grid-area: numbers;
+}
+
 .grid-container--technology > article {
   padding-inline: 1.5rem;
 }
@@ -779,5 +791,14 @@ body {
 
   .number-indicators > * {
     background-color: transparent;
+  }
+}
+
+/* large screens */
+@media (min-width: 45em) {
+  .grid-container--technology {
+    grid-template-areas:
+      ". title title title"
+      ". numbers content image";
   }
 }
