@@ -800,5 +800,35 @@ body {
     grid-template-areas:
       ". title title title"
       ". numbers content image";
+    grid-template-columns: minmax(0, 5rem) minmax(0, 5rem) repeat(
+        2,
+        minmax(0, 40rem)
+      );
+  }
+
+  .grid-container--technology > picture {
+    justify-self: end;
+  }
+
+  #launch-image > img {
+    content: url(../assets/technology/image-launch-vehicle-portrait.jpg);
+  }
+
+  #spaceport-image > img {
+    content: url(../assets/technology/image-spaceport-portrait.jpg);
+  }
+
+  #capsule-image > img {
+    content: url(../assets/technology/image-space-capsule-portrait.jpg);
+  }
+
+  .grid-container--technology > .number-indicators {
+    flex-direction: column;
+    justify-self: end;
+    font-size: 1.3rem;
+  }
+
+  .grid-container--technology > .number-indicators.flex {
+    gap: var(--gap, 2rem);
   }
 }
